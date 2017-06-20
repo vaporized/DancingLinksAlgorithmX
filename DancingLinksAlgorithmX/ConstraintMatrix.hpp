@@ -20,6 +20,7 @@ class ConstraintMatrix{
     Column* columns;
 public:
     Node* root;
+
     int nRows;
     int nCols;
     ConstraintMatrix(int nRows, int nCols, std::vector<std::vector<int> > coords);
@@ -27,7 +28,7 @@ public:
     void UncoverColumn(Column* col);
 
 private:
-    void addNewRow(std::vector<int> row);
+    void addNewRow(std::vector<int> row, int rowIdx);
 };
 
 struct Node{
@@ -36,6 +37,7 @@ struct Node{
     Node* up;
     Node* down;
     Column* col;
+    int rowIdx;
 };
 
 struct Column{

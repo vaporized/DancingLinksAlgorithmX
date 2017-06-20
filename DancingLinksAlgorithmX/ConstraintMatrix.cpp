@@ -46,8 +46,8 @@ ConstraintMatrix::ConstraintMatrix(int nRows, int nCols, std::vector<std::vector
     columns[nCols-1].header->right = root;
 
     //add rows
-    for (auto row : coords)
-        addNewRow(row);
+    for (int i = 0; i < coords.size(); ++i) 
+        addNewRow(coords[i], i);
 
 }
 
@@ -105,7 +105,7 @@ void ConstraintMatrix::UncoverColumn(Column* col){
     col->header->left->right = col->header;
 }
 
-void ConstraintMatrix::addNewRow(std::vector<int> row_pos){
+void ConstraintMatrix::addNewRow(std::vector<int> row_pos, int rowIdx){
 
     auto rowSize = row_pos.size();
     if (rowSize==0) return;
@@ -127,6 +127,9 @@ void ConstraintMatrix::addNewRow(std::vector<int> row_pos){
 
         //fill column info
         row[i].col = &columns[row_pos[i]];
+        
+        //fill row index info
+        row[i].rowIdx = rowIdx;
 
         //update column size counters
         ++columns[row_pos[i]].size;

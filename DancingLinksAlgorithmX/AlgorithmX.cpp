@@ -70,7 +70,7 @@ void AlgorithmX::search(int k, std::vector<Node*>& curSol){
 void AlgorithmX::solve(){
     std::vector<Node*> curSol;
     search(0, curSol);
-
+    solved = 1;
 }
 
 std::vector<std::vector<Node*> >* AlgorithmX::getRawSol(){
@@ -136,6 +136,30 @@ std::vector<std::vector<std::vector<bool> > >* AlgorithmX::getFullSol(){
         std::cout<<"Please solve the problem first."<<std::endl;
         return 0;
     }
+}
+
+void AlgorithmX::printSparseSol(){
+    if(!solved){
+        std::cout<<"Please solve the problem first."<<std::endl;
+        return;
+    }
+    if (nSols==0){
+        std::cout<<"No solution."<<std::endl;
+        return;
+    }
+    if (sparseSols.empty())
+        constructSparseSol();
+    for (auto solution:sparseSols){
+        for (auto row: solution){
+            for (auto elem: row){
+                std::cout<<elem<<" ";
+            }
+            std::cout<<std::endl;
+        }
+        std::cout<<std::endl;
+    }
+
+
 }
 
 void AlgorithmX::printSol(){

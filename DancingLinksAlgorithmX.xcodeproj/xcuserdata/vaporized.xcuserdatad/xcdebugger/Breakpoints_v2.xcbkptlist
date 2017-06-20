@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DancingLinksAlgorithmX/SudokuSolver.cpp"
+            timestampString = "519678711.133959"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "SudokuSolver::solve()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DancingLinksAlgorithmX/SudokuSolver.cpp"
+            timestampString = "519678889.924413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "SudokuSolver::printSol()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SudokuSolver::printSol()"
+                  moduleName = "DancingLinksAlgorithmX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaporized/git/DancingLinksAlgorithmX/DancingLinksAlgorithmX/SudokuSolver.cpp"
+                  timestampString = "519673123.624444"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SudokuSolver::printSol()"
+                  moduleName = "DancingLinksAlgorithmX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaporized/git/DancingLinksAlgorithmX/DancingLinksAlgorithmX/SudokuSolver.cpp"
+                  timestampString = "519673123.626075"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "542">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DancingLinksAlgorithmX/SudokuSolver.cpp"
+            timestampString = "519678711.133959"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "SudokuSolver::convertFromSparseMarix()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SudokuSolver::convertFromSparseMarix()"
+                  moduleName = "DancingLinksAlgorithmX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaporized/git/DancingLinksAlgorithmX/DancingLinksAlgorithmX/SudokuSolver.cpp"
+                  timestampString = "519673322.214747"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SudokuSolver::convertFromSparseMarix()"
+                  moduleName = "DancingLinksAlgorithmX"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaporized/git/DancingLinksAlgorithmX/DancingLinksAlgorithmX/SudokuSolver.cpp"
+                  timestampString = "519673322.217324"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "475">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DancingLinksAlgorithmX/SudokuSolver.cpp"
+            timestampString = "519678711.133959"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "SudokuSolver::convertToSparseMarix(char board[9][9])"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

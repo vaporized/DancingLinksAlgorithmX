@@ -25,6 +25,7 @@ public:
     std::vector<std::vector<Node*> >* getRawSol();
     std::vector<std::vector<std::vector<int> > >* getSparseSol();
     std::vector<std::vector<std::vector<bool> > >* getFullSol();
+    void printSparseSol();
     void printSol();
 private:
     void constructSparseSol();
