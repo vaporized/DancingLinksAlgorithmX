@@ -70,6 +70,7 @@ void AlgorithmX::search(int k, std::vector<Node*>& curSol){
 void AlgorithmX::solve(){
     std::vector<Node*> curSol;
     search(0, curSol);
+    nSols = (int)solutions.size();
     solved = 1;
 }
 

@@ -11,6 +11,7 @@
 		4A65964E1EEFD9D200857639 /* ConstraintMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A65964C1EEFD9D200857639 /* ConstraintMatrix.cpp */; };
 		4A6596701EF8F54300857639 /* AlgorithmX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A65966E1EF8F54300857639 /* AlgorithmX.cpp */; };
 		4A6596761EF94C2D00857639 /* SudokuSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6596741EF94C2D00857639 /* SudokuSolver.cpp */; };
+		4A6596791EFA297400857639 /* NQueens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A6596771EFA297400857639 /* NQueens.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		4A65966F1EF8F54300857639 /* AlgorithmX.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AlgorithmX.hpp; sourceTree = "<group>"; };
 		4A6596741EF94C2D00857639 /* SudokuSolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SudokuSolver.cpp; sourceTree = "<group>"; };
 		4A6596751EF94C2D00857639 /* SudokuSolver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SudokuSolver.hpp; sourceTree = "<group>"; };
+		4A6596771EFA297400857639 /* NQueens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NQueens.cpp; sourceTree = "<group>"; };
+		4A6596781EFA297400857639 /* NQueens.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NQueens.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				4A6596451EEFC81B00857639 /* main.cpp */,
+				4A6596771EFA297400857639 /* NQueens.cpp */,
+				4A6596781EFA297400857639 /* NQueens.hpp */,
 				4A65964C1EEFD9D200857639 /* ConstraintMatrix.cpp */,
 				4A65964D1EEFD9D200857639 /* ConstraintMatrix.hpp */,
 				4A65966E1EF8F54300857639 /* AlgorithmX.cpp */,
@@ -136,6 +141,7 @@
 			files = (
 				4A6596701EF8F54300857639 /* AlgorithmX.cpp in Sources */,
 				4A6596461EEFC81B00857639 /* main.cpp in Sources */,
+				4A6596791EFA297400857639 /* NQueens.cpp in Sources */,
 				4A65964E1EEFD9D200857639 /* ConstraintMatrix.cpp in Sources */,
 				4A6596761EF94C2D00857639 /* SudokuSolver.cpp in Sources */,
 			);
@@ -266,6 +272,7 @@
 				4A65964B1EEFC81B00857639 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

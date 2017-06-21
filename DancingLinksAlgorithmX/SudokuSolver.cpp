@@ -54,7 +54,6 @@ void SudokuSolver::convertToSparseMarix(char board[9][9]){
      *where row_idx = i; col_idx = j; box_idx = i/3*3+j/3
      */
     std::vector<std::vector<int>> sparse_matrix;
-    std::vector<int> colsToRemove;
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {
             if (board[i][j]=='.') {

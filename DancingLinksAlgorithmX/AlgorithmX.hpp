@@ -16,10 +16,10 @@ class AlgorithmX{
     std::vector<std::vector<Node*> > solutions;
     std::vector<std::vector<std::vector<int> > > sparseSols;
     std::vector<std::vector<std::vector<bool> > > fullSols;
-    int nSols = 0;
     bool solved = false;
     bool oneSolution = false;
 public:
+    int nSols = 0;
     AlgorithmX(ConstraintMatrix* problem, bool oneSolution=false);
     void solve();
     std::vector<std::vector<Node*> >* getRawSol();

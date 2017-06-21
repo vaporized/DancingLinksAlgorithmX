@@ -23,7 +23,8 @@ public:
 
     int nRows;
     int nCols;
-    ConstraintMatrix(int nRows, int nCols, std::vector<std::vector<int> > coords);
+    int secondaryCols;
+    ConstraintMatrix(int nRows, int nCols, std::vector<std::vector<int> > coords, int secondaryCols = 0);
     void CoverColumn(Column* col);
     void UncoverColumn(Column* col);
 

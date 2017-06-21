@@ -8,7 +8,7 @@
 
 #include "ConstraintMatrix.hpp"
 
-ConstraintMatrix::ConstraintMatrix(int nRows, int nCols, std::vector<std::vector<int> > coords):nRows(nRows),nCols(nCols){
+ConstraintMatrix::ConstraintMatrix(int nRows, int nCols, std::vector<std::vector<int> > coords,int secondaryCols):nRows(nRows),nCols(nCols),secondaryCols(secondaryCols){
 
     //build column headers
     columns = new Column[nCols];
@@ -21,7 +21,7 @@ ConstraintMatrix::ConstraintMatrix(int nRows, int nCols, std::vector<std::vector
 
     //build links between headers
     //headers in each column object points to headers in other columns
-    for (auto i = 0; i < nCols - 1; ++i) {
+    for (auto i = 0; i < nCols - 1 - secondaryCols; ++i) {
         
         //horizontal doubly links
         columns[i].header->right = columns[i+1].header;
@@ -42,8 +42,14 @@ ConstraintMatrix::ConstraintMatrix(int nRows, int nCols, std::vector<std::vector
     root->right = columns[0].header;
     columns[0].header->left = root;
 
-    root->left = columns[nCols-1].header;
-    columns[nCols-1].header->right = root;
+    root->left = columns[nCols-1-secondaryCols].header;
+    columns[nCols-1-secondaryCols].header->right = root;
+    
+    //link left and right to itself for secondary columns
+    for (int i = nCols-secondaryCols; i < nCols; ++i) {
+        columns[i].header->left = columns[i].header;
+        columns[i].header->right = columns[i].header;
+    }
 
     //add rows
     for (int i = 0; i < coords.size(); ++i) 

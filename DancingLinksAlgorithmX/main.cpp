@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "SudokuSolver.hpp"
+#include "NQueens.hpp"
 
 void testExactCoverProblem(std::vector<std::vector<int> >& sparse_input, int col, bool oneSol = false){
     auto cm = ConstraintMatrix((int)sparse_input.size(), col, sparse_input);
@@ -23,6 +24,12 @@ void testSudoku(std::string board[9], bool findAllSol = false){
     s.printSol();
 }
 
+void testNQueen(int n){
+    auto nq = NQueens(n);
+    nq.solve();
+    std::cout<<"Num of sols for "<<n<<" queen: "<<nq.getNSols()<<std::endl;
+    nq.printFullSols(true);
+}
 
 int main(int argc, const char * argv[]) {
     std::vector<std::vector<int> > sparse_input;
@@ -43,6 +50,8 @@ int main(int argc, const char * argv[]) {
     std::string board2[9] = {"8........","..36.....",".7..9.2..",".5...7...","....457..","...1...3.","..1....68","..85...1.",".9....4.."};
     testSudoku(board2);
     
-
+    //check for # of sols for nqueen problem, and prints an example sol
+    testNQueen(8);
+    
     return 0;
 }
