@@ -20,7 +20,8 @@ class SudokuSolver{
     std::vector<std::vector<std::vector<char> > > sols;
     bool solved = 0;
 public:
-    SudokuSolver(char board[9][9], bool findMultipleSols = false);
+    SudokuSolver(char _board[9][9], bool findMultipleSols = false);
+    SudokuSolver(std::string _board[9], bool findMultipleSols = false);
     SudokuSolver(std::vector<std::vector<char> > board, bool findMultipleSols = false);
     void solve();
     std::vector<std::vector<std::vector<char> > >* getSolutions();

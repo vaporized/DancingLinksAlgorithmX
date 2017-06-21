@@ -16,6 +16,15 @@ SudokuSolver::SudokuSolver(char _board[9][9], bool findMultipleSols):findMultipl
     convertToSparseMarix(board);
 }
 
+SudokuSolver::SudokuSolver(std::string _board[9], bool findMultipleSols):findMultipleSols(findMultipleSols){
+    for (int i = 0; i < 9; ++i) {
+        for (int j = 0; j < 9; ++j) {
+            board[i][j] = _board[i][j];
+        }
+    }
+    convertToSparseMarix(board);
+}
+
 SudokuSolver::SudokuSolver(std::vector<std::vector<char> > _board, bool findMultipleSols):findMultipleSols(findMultipleSols){
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 9; ++j) {
@@ -77,8 +86,6 @@ void SudokuSolver::convertToSparseMarix(char board[9][9]){
             }
         }
     }
-    //remove the constraint columns
-
     
     convertedMatrix = new ConstraintMatrix(9*9*9,4*9*9,sparse_matrix);
 }
@@ -130,5 +137,6 @@ void SudokuSolver::printSol(){
             }
             std::cout<<std::endl;
         }
+        std::cout<<std::endl;
     }
 }

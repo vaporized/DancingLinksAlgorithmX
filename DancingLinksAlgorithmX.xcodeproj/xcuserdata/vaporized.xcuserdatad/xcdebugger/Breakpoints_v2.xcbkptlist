@@ -10,13 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DancingLinksAlgorithmX/SudokuSolver.cpp"
-            timestampString = "519678711.133959"
+            timestampString = "519709520.248632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "SudokuSolver::solve()"
-            landmarkType = "7">
+            startingLineNumber = "99"
+            endingLineNumber = "99">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DancingLinksAlgorithmX/SudokuSolver.cpp"
-            timestampString = "519678889.924413"
+            timestampString = "519709520.248632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "SudokuSolver::printSol()"
             landmarkType = "7">
             <Locations>
@@ -74,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DancingLinksAlgorithmX/SudokuSolver.cpp"
-            timestampString = "519678711.133959"
+            timestampString = "519709520.248632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "SudokuSolver::convertFromSparseMarix()"
             landmarkType = "7">
             <Locations>
@@ -122,13 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DancingLinksAlgorithmX/SudokuSolver.cpp"
-            timestampString = "519678711.133959"
+            timestampString = "519709520.248632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "SudokuSolver::convertToSparseMarix(char board[9][9])"
-            landmarkType = "7">
+            startingLineNumber = "92"
+            endingLineNumber = "92">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
